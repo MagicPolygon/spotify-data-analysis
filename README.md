@@ -13,7 +13,5 @@ There is an anonymised version of the data, the most untouched data in this repo
 
 ### Processed data
 
-## Data
-
 The processed Spotify streaming dataset (~42 MB) is too large to include in the repository.  
 You can download it here: [Download CSV](https://drive.google.com/file/d/1ni0G4GwgaufJ313MPRr_0qHyxXdBQ5_c/view?usp=sharing)
