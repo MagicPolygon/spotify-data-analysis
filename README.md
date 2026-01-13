@@ -19,7 +19,7 @@ The raw data comes from a download of my personal Spotify Extended Streaming His
 
 The data moves through stages during the project:
 
-- **Raw**: Original files as provided by Spotify, left unchanged. These files are not included in this repository.
+- **Raw**: Original files as provided by Spotify, left unchanged. These files are not included in this repository due to privacy constraints.
 - **Anonymised**: Raw data with sensitive fields removed.
 - **Processed**: Cleaned and merged data, ready for analysis and visualisation on Tableau.
 
