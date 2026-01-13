@@ -26,7 +26,7 @@ The data moves through stages during the project:
 Key characteristics:
 
 - Multiple JSON files per data expoert
-- Streaming history spans from 2017 to 2026
+- Streaming history spans from 2017 to 2025
 - Sensitive fields (e.g., IP addresses) were removed before analysis
 
 For detailed field definitions, see `docs/schema.md`
