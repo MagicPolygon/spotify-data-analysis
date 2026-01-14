@@ -37,3 +37,10 @@ For detailed field definitions, see `docs/schema.md`
 - Tableau
 - Google Drive for project organisation
 - GitHub for showcasing results
+
+## Project structure
+
+spotify-data-analysis/
+|-- data/
+|   |-- anonymised/
+|   |   |-- 
