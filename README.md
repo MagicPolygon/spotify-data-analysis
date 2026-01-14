@@ -30,3 +30,10 @@ Key characteristics:
 - Sensitive fields (e.g., IP addresses) were removed before analysis
 
 For detailed field definitions, see `docs/schema.md`
+
+## Tools
+
+- Python (Pandas, Google Colaboratory)
+- Tableau
+- Google Drive for project organisation
+- GitHub for showcasing results
