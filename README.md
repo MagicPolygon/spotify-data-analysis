@@ -52,7 +52,7 @@ spotify-data-analysis/
 │   ├── anonymise.ipynb                 # Anonymises the raw JSON files
 │   └── data_preparation.ipynb          # Cleans data, fixes data types, and creates new columns
 ├── tableau/
-│   └── Listening Habits.twb            # Anonymises the raw JSON files
+│   └── Listening Habits.twb            # Data visualisations
 ├── LICENSE
 └── README.md
 ```
