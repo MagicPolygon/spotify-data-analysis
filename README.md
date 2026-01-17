@@ -15,7 +15,7 @@ Spotify is a streaming platform for songs, podcasts, and audiobooks, and is like
 
 ## Data
 
-The raw data comes from a download of my personal Spotify Extended Streaming History, which includes track information, and when and how I streamed content.
+The raw data comes from a download of my personal Spotify Extended Streaming History, which includes track information, and when and how I streamed content. Due to size, the full processed dataset is not included in this repository. Instead, a random sample of the dataset is provided in `data/processed/processed_data_sample.csv`.
 
 ### Data stages
 
@@ -26,9 +26,12 @@ The raw data comes from a download of my personal Spotify Extended Streaming His
 ### Key characteristics
 
 - Multiple JSON files per data export
-- Streaming history spans from 2017 to 2025
+- Streaming history spans from 2017 to 2026
 - Sensitive fields (e.g., IP addresses) were removed before analysis
 - Full processed dataset: ~200,000 rows
+- Sample dataset: 1000 rows
+    - Random sample of full processed dataset
+    - Has the same schema and column names as the full processed dataset
 
 For detailed field definitions, see `docs/schema.md`
 
@@ -57,3 +60,7 @@ spotify-data-analysis/
 ├── LICENSE
 └── README.md
 ```
+
+## Notes/Limitations
+
+- The Tableau workbook was run on the full dataset
