@@ -1,0 +1,2424 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <VizInTooltipHideWorksheet />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='processed_spotify_data' inline='true' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed_spotify_data' name='textscan.0g3mhge1ulnky114bqbfp0ko98ya'>
+            <connection class='textscan' directory='C:/Users/IvanQ/OneDrive/Desktop/Work/Projects/Data Analysis/spotify-data-analysis/data/processed' filename='processed_spotify_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0g3mhge1ulnky114bqbfp0ko98ya' name='processed_spotify_data.csv' table='[processed_spotify_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='ts' ordinal='1' />
+            <column datatype='integer' name='ms_played' ordinal='2' />
+            <column datatype='string' name='master_metadata_track_name' ordinal='3' />
+            <column datatype='string' name='master_metadata_album_artist_name' ordinal='4' />
+            <column datatype='string' name='master_metadata_album_album_name' ordinal='5' />
+            <column datatype='string' name='spotify_track_uri' ordinal='6' />
+            <column datatype='string' name='reason_start' ordinal='7' />
+            <column datatype='string' name='reason_end' ordinal='8' />
+            <column datatype='boolean' name='shuffle' ordinal='9' />
+            <column datatype='boolean' name='skipped' ordinal='10' />
+            <column datatype='date' name='date' ordinal='11' />
+            <column datatype='integer' name='year' ordinal='12' />
+            <column datatype='integer' name='month' ordinal='13' />
+            <column datatype='date' date-parse-format='yyyy-MM' name='year_month' ordinal='14' />
+            <column datatype='integer' name='hour' ordinal='15' />
+            <column datatype='integer' name='day_of_week' ordinal='16' />
+            <column datatype='string' name='day_name' ordinal='17' />
+            <column datatype='real' name='listening_hours' ordinal='18' />
+            <column datatype='integer' name='track_play_count' ordinal='19' />
+            <column datatype='integer' name='skip_flag' ordinal='20' />
+            <column datatype='integer' name='completed_flag' ordinal='21' />
+            <column datatype='boolean' name='valid_play' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ts</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ts]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>ts</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ms_played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ms_played]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>ms_played</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>master_metadata_track_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[master_metadata_track_name]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>master_metadata_track_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>master_metadata_album_artist_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[master_metadata_album_artist_name]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>master_metadata_album_artist_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>master_metadata_album_album_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[master_metadata_album_album_name]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>master_metadata_album_album_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spotify_track_uri</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spotify_track_uri]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>spotify_track_uri</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_start</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason_start]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>reason_start</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_end</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason_end]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>reason_end</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shuffle</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[shuffle]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>shuffle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skipped</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[skipped]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>skipped</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year_month]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>year_month</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_name]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>day_name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listening_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[listening_hours]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>listening_hours</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>track_play_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[track_play_count]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>track_play_count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skip_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[skip_flag]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>skip_flag</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[completed_flag]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>completed_flag</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>valid_play</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[valid_play]</local-name>
+            <parent-name>[processed_spotify_data.csv]</parent-name>
+            <remote-alias>valid_play</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Skip Rate' datatype='real' name='[Calculation_0816417623756800]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([skip_flag])/SUM([track_play_count])' />
+      </column>
+      <column caption='Minutes Played' datatype='real' name='[Calculation_0816417650331649]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[listening_hours] * 60' />
+      </column>
+      <column caption='Index' datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <column caption='processed_spotify_data.csv' datatype='table' name='[__tableau_internal_object_id__].[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Completed Flag' datatype='integer' name='[completed_flag]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day Name' datatype='string' name='[day_name]' role='dimension' type='nominal' />
+      <column caption='Day Of Week' datatype='integer' name='[day_of_week]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Hour' datatype='integer' name='[hour]' role='dimension' type='ordinal' />
+      <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+      <column caption='Album Name' datatype='string' name='[master_metadata_album_album_name]' role='dimension' type='nominal' />
+      <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+      <column caption='Track Name' datatype='string' name='[master_metadata_track_name]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='ordinal' />
+      <column caption='Milliseconds Played' datatype='integer' name='[ms_played]' role='measure' type='quantitative' />
+      <column caption='Reason End' datatype='string' name='[reason_end]' role='dimension' type='nominal' />
+      <column caption='Reason Start' datatype='string' name='[reason_start]' role='dimension' type='nominal' />
+      <column caption='Shuffle' datatype='boolean' name='[shuffle]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Skip Flag' datatype='integer' name='[skip_flag]' role='dimension' type='ordinal' />
+      <column caption='Skipped' datatype='boolean' name='[skipped]' role='dimension' type='nominal' />
+      <column caption='Spotify Track URI' datatype='string' name='[spotify_track_uri]' role='dimension' type='nominal' />
+      <column caption='Track Play Count' datatype='integer' name='[track_play_count]' role='measure' type='ordinal' />
+      <column caption='Timestamp' datatype='datetime' name='[ts]' role='dimension' type='quantitative' />
+      <column caption='Valid Play' datatype='boolean' name='[valid_play]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      <column caption='Year Month' datatype='date' name='[year_month]' role='dimension' type='ordinal' />
+      <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:ok]' pivot='key' type='ordinal' />
+      <group caption='Tooltip (DAY(Date))' hidden='true' name='[Tooltip (DAY(Date))]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tdy:date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Top 10 Artists by Hours Played' name='[Top 10 Artists by Hours Played]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([listening_hours])' function='order' user:ui-marker='order'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Alfa Mist&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Daedelus&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;deadmau5&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Jacques&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Joe Armon-Jones&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Jonwayne&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Lone&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Mammal Hands&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Nujabes&quot;' />
+              <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Ross from Friends&quot;' />
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/IvanQ/AppData/Local/Temp/TableauTemp/#TableauTemp_11beh6a096vxdq1b2j82103n3rms.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/21/2026 10:01:19 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200225</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ts</remote-alias>
+              <ordinal>1</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>200225</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ms_played</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ms_played]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ms_played</remote-alias>
+              <ordinal>2</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12628</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>master_metadata_track_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[master_metadata_track_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>master_metadata_track_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7158</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>master_metadata_album_artist_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[master_metadata_album_artist_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>master_metadata_album_artist_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>master_metadata_album_album_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[master_metadata_album_album_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>master_metadata_album_album_name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4897</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spotify_track_uri</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spotify_track_uri]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>spotify_track_uri</remote-alias>
+              <ordinal>6</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8395</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason_start</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason_start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason_start</remote-alias>
+              <ordinal>7</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason_end</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason_end]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason_end</remote-alias>
+              <ordinal>8</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shuffle</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[shuffle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shuffle</remote-alias>
+              <ordinal>9</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>skipped</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[skipped]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>skipped</remote-alias>
+              <ordinal>10</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8206</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>12</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>13</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[year_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_month</remote-alias>
+              <ordinal>14</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>163</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour</remote-alias>
+              <ordinal>15</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_of_week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day_of_week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_of_week</remote-alias>
+              <ordinal>16</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_name</remote-alias>
+              <ordinal>17</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>listening_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[listening_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>listening_hours</remote-alias>
+              <ordinal>18</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12628</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>track_play_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[track_play_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>track_play_count</remote-alias>
+              <ordinal>19</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>skip_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[skip_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>skip_flag</remote-alias>
+              <ordinal>20</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completed_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[completed_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completed_flag</remote-alias>
+              <ordinal>21</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>valid_play</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[valid_play]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>valid_play</remote-alias>
+              <ordinal>22</ordinal>
+              <family>processed_spotify_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='processed_spotify_data.csv' id='processed_spotify_data.csv_1C4C6E6955C346A2B8A05DBEEA943B0D'>
+            <properties context=''>
+              <relation connection='textscan.0g3mhge1ulnky114bqbfp0ko98ya' name='processed_spotify_data.csv' table='[processed_spotify_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='ts' ordinal='1' />
+                  <column datatype='integer' name='ms_played' ordinal='2' />
+                  <column datatype='string' name='master_metadata_track_name' ordinal='3' />
+                  <column datatype='string' name='master_metadata_album_artist_name' ordinal='4' />
+                  <column datatype='string' name='master_metadata_album_album_name' ordinal='5' />
+                  <column datatype='string' name='spotify_track_uri' ordinal='6' />
+                  <column datatype='string' name='reason_start' ordinal='7' />
+                  <column datatype='string' name='reason_end' ordinal='8' />
+                  <column datatype='boolean' name='shuffle' ordinal='9' />
+                  <column datatype='boolean' name='skipped' ordinal='10' />
+                  <column datatype='date' name='date' ordinal='11' />
+                  <column datatype='integer' name='year' ordinal='12' />
+                  <column datatype='integer' name='month' ordinal='13' />
+                  <column datatype='date' date-parse-format='yyyy-MM' name='year_month' ordinal='14' />
+                  <column datatype='integer' name='hour' ordinal='15' />
+                  <column datatype='integer' name='day_of_week' ordinal='16' />
+                  <column datatype='string' name='day_name' ordinal='17' />
+                  <column datatype='real' name='listening_hours' ordinal='18' />
+                  <column datatype='integer' name='track_play_count' ordinal='19' />
+                  <column datatype='integer' name='skip_flag' ordinal='20' />
+                  <column datatype='integer' name='completed_flag' ordinal='21' />
+                  <column datatype='boolean' name='valid_play' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Click Count of Alfa Mist&apos;s Songs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column-instance column='[reason_start]' derivation='Count' name='[cnt:reason_start:qk]' pivot='key' type='quantitative' />
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column caption='Track Name' datatype='string' name='[master_metadata_track_name]' role='dimension' type='nominal' />
+            <column-instance column='[master_metadata_track_name]' derivation='None' name='[none:master_metadata_track_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reason_start]' derivation='None' name='[none:reason_start:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Reason Start' datatype='string' name='[reason_start]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]'>
+            <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Alfa Mist&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:reason_start:nk]'>
+            <groupfilter function='member' level='[none:reason_start:nk]' member='&quot;clickrow&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' context='true'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:year:ok]' member='2024' />
+              <groupfilter function='member' level='[none:year:ok]' member='2025' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[cnt:reason_start:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:reason_start:nk]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[cnt:reason_start:qk]</cols>
+      </table>
+      <simple-id uuid='{4B283664-9C74-49C1-BFF3-EFF9917B2707}' />
+    </worksheet>
+    <worksheet name='Click Count of Top 10 Artist&apos;s Songs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column-instance column='[reason_start]' derivation='Count' name='[cnt:reason_start:qk]' pivot='key' type='quantitative' />
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[master_metadata_album_artist_name]' derivation='None' name='[none:master_metadata_album_artist_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reason_start]' derivation='None' name='[none:reason_start:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Reason Start' datatype='string' name='[reason_start]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([listening_hours])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:master_metadata_album_artist_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:reason_start:nk]'>
+            <groupfilter function='member' level='[none:reason_start:nk]' member='&quot;clickrow&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' context='true'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:year:ok]' member='2024' />
+              <groupfilter function='member' level='[none:year:ok]' member='2025' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[cnt:reason_start:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:reason_start:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[cnt:reason_start:qk]</cols>
+      </table>
+      <simple-id uuid='{4BDDE56C-E985-444E-8ADD-2F9DA742D95C}' />
+    </worksheet>
+    <worksheet name='Hours Played over Days of October 2024 for Alfa Mist'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[year_month]' derivation='None' name='[none:year_month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[listening_hours]' derivation='Sum' name='[sum:listening_hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Month' datatype='date' name='[year_month]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]'>
+            <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Alfa Mist&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year_month:qk]' context='true' included-values='in-range'>
+            <min>#2024-10-01#</min>
+            <max>#2024-10-31#</max>
+          </filter>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year_month:qk]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Day of Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[tdy:date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Hours Played:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:listening_hours:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<Sheet name="Tooltip" maxwidth="300" maxheight="300" filter="<All Fields>">]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:listening_hours:qk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{CB50B937-7DC8-43D5-A43D-2B0FEDC92590}' />
+    </worksheet>
+    <worksheet name='Hours Played over Month-Year for Alfa Mist'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[year_month]' derivation='MY' name='[my:year_month:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[listening_hours]' derivation='Sum' name='[sum:listening_hours:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Month' datatype='date' name='[year_month]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]'>
+            <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Alfa Mist&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[my:year_month:ok]' context='true'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[my:year_month:ok]' member='202301' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202302' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202303' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202304' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202305' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202306' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202307' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202308' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202309' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202310' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202311' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202312' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202401' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202402' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202403' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202404' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202405' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202406' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202407' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202408' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202409' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202410' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202411' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202412' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202501' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202502' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202503' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202504' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202505' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202506' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202507' />
+              <groupfilter function='member' level='[my:year_month:ok]' member='202508' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[my:year_month:ok]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:listening_hours:qk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[my:year_month:ok]</cols>
+      </table>
+      <simple-id uuid='{12FDB462-42EB-4727-B772-EBBFDE826348}' />
+    </worksheet>
+    <worksheet name='Skip Rate of Top 10 Artists'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column caption='Skip Rate' datatype='real' name='[Calculation_0816417623756800]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([skip_flag])/SUM([track_play_count])' />
+            </column>
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[master_metadata_album_artist_name]' derivation='None' name='[none:master_metadata_album_artist_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Skip Flag' datatype='integer' name='[skip_flag]' role='dimension' type='ordinal' />
+            <column caption='Track Play Count' datatype='integer' name='[track_play_count]' role='measure' type='ordinal' />
+            <column-instance column='[Calculation_0816417623756800]' derivation='User' name='[usr:Calculation_0816417623756800:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([listening_hours])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:master_metadata_album_artist_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' context='true'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:year:ok]' member='2024' />
+              <groupfilter function='member' level='[none:year:ok]' member='2025' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[usr:Calculation_0816417623756800:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[usr:Calculation_0816417623756800:qk]</cols>
+      </table>
+      <simple-id uuid='{16D4285E-D36B-42D9-B929-AF3046B93764}' />
+    </worksheet>
+    <worksheet name='Tooltip'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column caption='Minutes Played' datatype='real' name='[Calculation_0816417650331649]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[listening_hours] * 60' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column caption='Track Name' datatype='string' name='[master_metadata_track_name]' role='dimension' type='nominal' />
+            <column-instance column='[master_metadata_track_name]' derivation='None' name='[none:master_metadata_track_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_month]' derivation='None' name='[none:year_month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0816417650331649]' derivation='Sum' name='[sum:Calculation_0816417650331649:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:ok]' pivot='key' type='ordinal' />
+            <column caption='Year Month' datatype='date' name='[year_month]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Tooltip (DAY(Date))]'>
+            <groupfilter function='level-members' level='[tdy:date:ok]' user:ui-action-filter='[Action - Tooltip]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]' context='true'>
+            <groupfilter function='member' level='[master_metadata_album_artist_name]' member='&quot;Alfa Mist&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]'>
+            <groupfilter count='3' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_0816417650331649])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:master_metadata_track_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year_month:qk]' context='true' included-values='in-range'>
+            <min>#2024-10-01#</min>
+            <max>#2024-10-31#</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:Calculation_0816417650331649:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year_month:qk]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Tooltip (DAY(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:Calculation_0816417650331649:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:Calculation_0816417650331649:qk]</cols>
+      </table>
+      <simple-id uuid='{1D9F9409-C0B8-4093-85A9-4601A3268588}' />
+    </worksheet>
+    <worksheet name='Top 10 Artists by Hours Played'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_spotify_data' name='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vw1zc20p4ox6g1e0mc4r1l04gzy'>
+            <column-instance column='[master_metadata_track_name]' derivation='CountD' name='[ctd:master_metadata_track_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Hours Played' datatype='real' name='[listening_hours]' role='measure' type='quantitative' />
+            <column caption='Artist Name' datatype='string' name='[master_metadata_album_artist_name]' role='dimension' type='nominal' />
+            <column caption='Track Name' datatype='string' name='[master_metadata_track_name]' role='dimension' type='nominal' />
+            <column-instance column='[master_metadata_album_artist_name]' derivation='None' name='[none:master_metadata_album_artist_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[valid_play]' derivation='None' name='[none:valid_play:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[listening_hours]' derivation='Sum' name='[sum:listening_hours:qk]' pivot='key' type='quantitative' />
+            <column caption='Valid Play' datatype='boolean' name='[valid_play]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([listening_hours])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:master_metadata_album_artist_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:valid_play:nk]' context='true'>
+            <groupfilter function='member' level='[none:valid_play:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' context='true'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:year:ok]' member='2024' />
+              <groupfilter function='member' level='[none:year:ok]' member='2025' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:listening_hours:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:valid_play:nk]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</column>
+            <column>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[ctd:master_metadata_track_name:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</rows>
+        <cols>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[sum:listening_hours:qk]</cols>
+      </table>
+      <simple-id uuid='{7FDA8549-04B0-4602-9A19-C5CE01D0765E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Top 10 Artists by Hours Played'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:valid_play:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{080210D0-7EAB-4E1F-BDE8-788D196D92DD}' />
+    </window>
+    <window class='worksheet' name='Skip Rate of Top 10 Artists'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FDCB67BD-BB31-4E01-BEE5-CBEE582CD872}' />
+    </window>
+    <window class='worksheet' name='Click Count of Top 10 Artist&apos;s Songs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_album_artist_name:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:reason_start:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6D08BC86-3AE7-4B3C-AD62-42D01C3130F9}' />
+    </window>
+    <window class='worksheet' name='Click Count of Alfa Mist&apos;s Songs'>
+      <cards>
+        <edge name='left'>
+          <strip size='214'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]' type='filter' />
+            <card param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:reason_start:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{497D0CD2-65CB-413D-B8D1-3DFB1771246F}' />
+    </window>
+    <window class='worksheet' name='Hours Played over Month-Year for Alfa Mist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[my:year_month:ok]' type='filter' />
+            <card mode='radiolist' param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[yr:year_month:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7D772E59-FEAC-4995-8FC1-272BB41254D2}' />
+    </window>
+    <window class='worksheet' name='Hours Played over Days of October 2024 for Alfa Mist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year_month:qk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BD9F1582-F560-4CC7-8FDA-2B47B4335082}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Tooltip'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[Top 10 Artists by Hours Played]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:master_metadata_track_name:nk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[none:year_month:qk]</field>
+            <field>[federated.0vw1zc20p4ox6g1e0mc4r1l04gzy].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D153BEBE-BA40-4923-85F7-93E82C502A4B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Click Count of Alfa Mist&apos;s Songs' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Click Count of Top 10 Artist&apos;s Songs' width='192'>
+      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
+      f91RAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Hours Played over Days of October 2024 for Alfa Mist' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Hours Played over Month-Year for Alfa Mist' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Skip Rate of Top 10 Artists' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Tooltip' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 Artists by Hours Played' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
