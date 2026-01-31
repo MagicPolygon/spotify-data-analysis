@@ -15,7 +15,7 @@ Spotify is a streaming platform for songs, podcasts, and audiobooks, and is like
 
 ## Data
 
-The raw data comes from a download of my personal Spotify Extended Streaming History, which includes track information and when and how I streamed content. Due to size, the full processed dataset is not included in this repository. Instead, a random sample of the dataset is provided in `data/processed/processed_data_sample.csv`.
+The raw data comes from a download of my personal Spotify Extended Streaming History, which includes track information and when and how I streamed content. Due to size, the full processed dataset is not included in this repository. Instead, a random sample of the dataset is provided in `outputs/processed_data_sample/processed_data_sample.csv`.
 
 ### Data stages
 
