@@ -51,7 +51,6 @@ spotify-data-analysis/
 ├── docs/
 │   └── schema.md                       # Schema detailing key fields used in the processed dataset
 ├── notebooks/
-│   ├── 01_anonymisation.ipynb          # Anonymises the raw JSON files
 │   └── data_preparation.ipynb          # Cleans data, fixes data types, and creates new columns
 ├── outputs/
 │   ├── figures/                        # PNGs of Tableau charts
@@ -98,4 +97,5 @@ spotify-data-analysis/
 
 ## Notes/Limitations
 
-- The Tableau workbook was run on the full dataset
+- The Tableau workbook was run on the full dataset.
+- I have opted not to include the anonymisation notebook to ensure no sensitive information is leaked.
