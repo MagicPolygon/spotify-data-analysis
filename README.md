@@ -89,7 +89,7 @@ spotify-data-analysis/
 
 - Available in `outputs/figures`.
 - **Top 10 Artists by Hours Played (Example)**:
-<img src="outputs/figures/top_10_artists_by_hours_played.png" width="400">
+<img src="outputs/figures/top_10_artists_by_hours_played.png" width="600">
 
 ### 2. Processed Data Sample
 
