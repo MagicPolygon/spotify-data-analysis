@@ -83,6 +83,19 @@ spotify-data-analysis/
 - From February 2023 to August 2025, there was a gigantic spike in Alfa Mist listening time in October 2024.
 - Looking within this month, we see two spikes where "Exit" dominated listening time.
 
+## Outputs
+
+### 1. Static Figures
+
+- Available in `outputs/figures`.
+- **Top 10 Artists by Hours Played (Example)**:
+- ![Top 10 Artists by Hours Played](outputs/figures/top_10 _artists_by_hours_played.png)
+
+### 2. Processed Data Sample
+
+- Available in `outputs/processed_data_sample`.
+- A CSV file that showcases 1000 rows of the full processed dataset.
+
 ## Notes/Limitations
 
 - The Tableau workbook was run on the full dataset
