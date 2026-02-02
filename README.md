@@ -51,7 +51,8 @@ spotify-data-analysis/
 ├── docs/
 │   └── schema.md                       # Schema detailing key fields used in the processed dataset
 ├── notebooks/
-│   └── data_preparation.ipynb          # Cleans data, fixes data types, and creates new columns
+│   ├── data_preparation.ipynb          # Cleans data, fixes data types, and creates new columns
+│   └── sampler.ipynb                   # Creates a random sample of the full processed data
 ├── outputs/
 │   ├── figures/                        # PNGs of Tableau charts
 │   └── processed_data_sample/          # Contains sample of cleaned, Tableau-ready data
